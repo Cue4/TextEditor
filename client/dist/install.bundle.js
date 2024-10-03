@@ -15,7 +15,7 @@
   \***************************/
 /***/ (() => {
 
-eval("const butInstall = document.getElementById('buttonInstall');\n\n// Logic for installing the PWA\n// TODO: Add an event handler to the `beforeinstallprompt` event\nwindow.addEventListener('beforeinstallprompt', (event) => {});\n\n// TODO: Implement a click event handler on the `butInstall` element\nbutInstall.addEventListener('click', async () => {});\n\n// TODO: Add an handler for the `appinstalled` event\nwindow.addEventListener('appinstalled', (event) => {});\n\n\n//# sourceURL=webpack://JATE/./src/js/install.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (18:1)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n|   if (!promptEvent) {\\n|    return;\\n> });\\n| \\n| // TODO: Implement a click event handler on the `butInstall` element\");\n\n//# sourceURL=webpack://JATE/./src/js/install.js?");
 
 /***/ })
 
@@ -24,7 +24,7 @@ eval("const butInstall = document.getElementById('buttonInstall');\n\n// Logic f
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/js/install.js"]();
 /******/ 	

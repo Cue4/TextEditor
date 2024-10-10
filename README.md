@@ -19,4 +19,7 @@ This project is a browser-based text editor that functions both online and offli
 ## Installation
 
   - npm install
-  - npm run start
+  - npm start
+
+## License
+    This project is licensed under the MIT License.  

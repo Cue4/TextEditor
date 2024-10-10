@@ -21,7 +21,32 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html'
-      })
+      }),
+        // Manifest file for PWA
+        new WebpackPwaManifest({
+          fingerprints: false,
+          inject: true,
+          name: 'Text Editor PWA',
+          short_name: 'TextEditor',
+          description: 'A text editor Progressive Web App!',
+          background_color: '#ffffff',
+          theme_color: '#317EFB',
+          start_url: '/',
+          publicPath: '/',
+          icons: [
+            {
+              src: path.resolve('src/images/logo.png'),
+              sizes: [96, 128, 192, 256, 384, 512],
+              destination: path.join('assets', 'icons'),
+            },
+          ],
+        }),
+  
+        // Custom service worker
+        new InjectManifest({
+          swSrc: './src-sw.js', // Custom service worker file
+          swDest: 'service-worker.js',
+        }),
   ],
 
     module: {
